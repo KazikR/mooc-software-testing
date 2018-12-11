@@ -1,10 +1,8 @@
 package tudelft.mirror;
 
 public class Mirror {
-
     public String mirrorEnds(String string) {
         String mirror = "";
-
         int begin = 0;
         int end = string.length() - 1;
         for (; begin < end; begin++, end--) {
@@ -15,7 +13,6 @@ public class Mirror {
                 break;
             }
         }
-
-        return begin == end ? string : mirror;
+        return begin >= end ? string : mirror;
     }
 }
