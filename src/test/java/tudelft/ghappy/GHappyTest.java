@@ -41,12 +41,14 @@ public class GHappyTest {
         Assertions.assertEquals(false, h.gHappy("g"));
     }
 
+//    no G cases underspecified
     @Test
     public void noGshortest() {
         GHappy h = new GHappy();
         Assertions.assertEquals(false, h.gHappy("x"));
     }
 
+//    no G cases underspecified
     @Test
     public void noGsAnd10RandomChars() {
         GHappy h = new GHappy();
