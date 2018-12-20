@@ -18,9 +18,14 @@ class TwoNumbersSum {
             int secondVal = i < second.size() ? second.get(i) : 0;
             int total = firstVal + secondVal + complement;
             complement = 0;
-            if (total >= 10){
+            if (total == 10){
                 complement = 1;
                 total -= 10;
+            }
+            if (total > 10){
+                complement = 1;
+                total -= 10;
+                result.add(i, 1);
             }
             result.add(i, total);
         }
